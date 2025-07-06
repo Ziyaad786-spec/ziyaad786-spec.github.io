@@ -3,14 +3,8 @@
 import { BookOpen, Users, Award, Sparkles, Star, Leaf, TreePine, Flower2 } from "lucide-react"
 
 export const Hero = () => {
-  const handleEnrollDownload = () => {
-    // Create a temporary link element to trigger download
-    const link = document.createElement("a")
-    link.href = "/enrollment-form.pdf" // This should be placed in the public folder
-    link.download = "Future-Focus-Learning-Centre-Enrollment-Form.pdf"
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
+  const handleEnrollClick = () => {
+    window.location.href = "mailto:info@futurefocuslearningcentre.co.za?subject=Enrollment Inquiry"
   }
 
   return (
@@ -59,21 +53,14 @@ export const Hero = () => {
               className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl animate-fade-in"
               style={{ animationDelay: "0.5s" }}
             >
-              Nurturing young minds through world-class education with IMPAQ, Cambridge, Essential Learning, and GED
-              curriculums
+              Nurturing young minds through world-class education with CAPS, MobyMax, GED, and Cambridge curriculums
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <button
-                onClick={handleEnrollDownload}
+                onClick={handleEnrollClick}
                 className="bg-emerald-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-emerald-700 transition-all duration-300 hover:scale-110 animate-slide-in-right transform hover:rotate-1 shadow-lg hover:shadow-xl"
               >
                 Enroll Today
-              </button>
-              <button
-                className="border-2 border-emerald-600 text-emerald-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-emerald-600 hover:text-white transition-all duration-300 hover:scale-110 animate-slide-in-right transform hover:-rotate-1 shadow-lg hover:shadow-xl"
-                style={{ animationDelay: "0.2s" }}
-              >
-                Learn More
               </button>
             </div>
           </div>
@@ -106,7 +93,7 @@ export const Hero = () => {
           >
             <BookOpen className="h-12 w-12 text-emerald-600 mx-auto mb-4 animate-bounce" />
             <h3 className="text-2xl font-bold text-gray-900 mb-2">4 Curriculums</h3>
-            <p className="text-gray-600">IMPAQ, Cambridge, Essential Learning & GED</p>
+            <p className="text-gray-600">CAPS, MobyMax, GED & Cambridge</p>
           </div>
           <div
             className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-110 animate-fade-in transform hover:-rotate-1 border border-green-100"

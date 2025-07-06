@@ -3,31 +3,42 @@ import { CheckCircle, Wifi, Users, Sparkles, Leaf, TreePine } from "lucide-react
 export const CurriculumSection = () => {
   const curriculums = [
     {
-      name: "IMPAQ",
-      description: "South African curriculum designed for flexible learning",
+      name: "CAPS",
+      description: "South African Curriculum. Focused, structured learning.",
       features: [
         "Locally relevant content",
-        "Flexible pacing",
-        "Assessment-based progression",
+        "Structured learning approach",
+        "Department of Education aligned",
         "Strong foundation in core subjects",
       ],
       color: "bg-emerald-600",
     },
     {
-      name: "Cambridge",
-      description: "International curriculum recognized worldwide",
-      features: ["Global recognition", "Critical thinking focus", "University preparation", "International standards"],
-      color: "bg-green-600",
-    },
-    {
       name: "MobyMax",
-      description: "Adaptive learning technology for personalized education",
+      description: "Personalized learning. Adaptive, engaging, fun!",
       features: [
         "Personalized learning paths",
+        "Adaptive technology",
+        "Engaging and interactive",
         "Real-time progress tracking",
-        "Interactive content",
-        "Adaptive difficulty levels",
       ],
+      color: "bg-blue-600",
+    },
+    {
+      name: "GED",
+      description: "High school equivalency. Your future starts now!",
+      features: [
+        "High school equivalency",
+        "Flexible scheduling",
+        "Adult learner focused",
+        "Career advancement pathway",
+      ],
+      color: "bg-purple-600",
+    },
+    {
+      name: "Cambridge",
+      description: "International standards. Globally recognized excellence.",
+      features: ["Global recognition", "International standards", "Critical thinking focus", "University preparation"],
       color: "bg-amber-600",
     },
   ]
@@ -66,15 +77,14 @@ export const CurriculumSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate-slide-in-right">
-            Our Curriculum Options
+            Comprehensive Curriculum
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto animate-scale-in" style={{ animationDelay: "0.3s" }}>
-            Choose from three world-class educational pathways designed to nurture your child's unique learning needs
-            and future aspirations.
+            Empowering Learners: Our curriculum blends CAPS, MobyMax, GED, and Cambridge for a world-class education.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {curriculums.map((curriculum, index) => (
             <div
               key={index}
@@ -124,18 +134,6 @@ export const CurriculumSection = () => {
               </div>
             ))}
           </div>
-        </div>
-
-        {/* Adult Matric Information */}
-        <div
-          className="mt-16 bg-amber-50 border border-amber-200 rounded-xl p-8 text-center hover:shadow-lg transition-all duration-300 hover:scale-105 animate-fade-in"
-          style={{ animationDelay: "1.2s" }}
-        >
-          <h3 className="text-2xl font-bold text-gray-900 mb-4 animate-bounce">Adult Matric Program</h3>
-          <p className="text-lg text-gray-700">
-            We offer Adult Matric (Grade 12 equivalent) - a qualification designed for adult learners seeking to
-            complete their secondary education.
-          </p>
         </div>
       </div>
     </section>

@@ -72,12 +72,8 @@ export const Footer = () => {
         {/* Eduvance branding */}
         <div className="mt-8 pt-6 border-t border-gray-700">
           <div className="flex items-center justify-center space-x-2 text-gray-400 text-sm">
-            <span>Designed and managed by</span>
-            <img
-              src="/lovable-uploads/3bf46f1a-ae95-4315-8969-f077f1094009.png"
-              alt="Eduvance"
-              className="h-4 w-auto"
-            />
+            <span>Powered by Eduvance Group (PTY) Ltd</span>
+            <img src="/eduvance-logo.png" alt="Eduvance" className="h-4 w-auto" />
             <span>Eduvance</span>
           </div>
         </div>
