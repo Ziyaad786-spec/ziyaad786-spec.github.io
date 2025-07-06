@@ -40,9 +40,6 @@ export const AboutSection = () => {
               students from Grade R to 12 receive the education that best suits their needs and aspirations, all while
               fostering a connection with nature and sustainable learning.
             </p>
-            <button className="bg-emerald-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-emerald-700 transition-colors duration-200">
-              Visit Our Facebook Page
-            </button>
           </div>
 
           <div className="grid grid-cols-2 gap-6">
