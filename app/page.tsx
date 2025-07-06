@@ -9,7 +9,6 @@ import { GradeLevels } from "@/components/grade-levels"
 import { Hero } from "@/components/hero"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { WhatSetsUsApart } from "@/components/what-sets-us-apart"
 
 export default function FutureFocusWebsite() {
   return (
@@ -21,7 +20,6 @@ export default function FutureFocusWebsite() {
       <main className="min-h-screen">
         <Hero />
         <AboutSection />
-        <WhatSetsUsApart />
         <CurriculumSection />
         <GradeLevels />
         <Gallery />

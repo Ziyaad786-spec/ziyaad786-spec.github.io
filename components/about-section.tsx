@@ -36,9 +36,9 @@ export const AboutSection = () => {
               experiences that cater to different learning styles and academic goals.
             </p>
             <p className="text-lg text-gray-700 mb-8">
-              With our four comprehensive curriculum options - GED, IMPAQ, Cambridge, and MobyMax - we ensure that
-              students from Grade R to 12 receive the education that best suits their needs and aspirations, all while
-              fostering a connection with nature and sustainable learning.
+              With our three comprehensive curriculum options - IMPAQ, Cambridge, and MobyMax - we ensure that students
+              from Grade R to 12 receive the education that best suits their needs and aspirations, all while fostering
+              a connection with nature and sustainable learning.
             </p>
             <button className="bg-emerald-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-emerald-700 transition-colors duration-200">
               Visit Our Facebook Page
