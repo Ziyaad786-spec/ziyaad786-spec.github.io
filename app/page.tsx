@@ -10,7 +10,7 @@ import { Hero } from "@/components/hero"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { WhatSetsUsApart } from "@/components/what-sets-us-apart"
-import { TeamSection } from "@/components/team-section" // Import the new component
+import { StackedCarousel } from "@/components/stacked-carousel" // Import the new component
 
 export default function FutureFocusWebsite() {
   return (
@@ -27,7 +27,7 @@ export default function FutureFocusWebsite() {
         <GradeLevels />
         <Gallery />
         <ExtracurricularSection />
-        <TeamSection /> {/* Add the new TeamSection here */}
+        <StackedCarousel /> {/* Use the new StackedCarousel here */}
         <ContactSection />
       </main>
 
