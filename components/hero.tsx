@@ -53,7 +53,8 @@ export const Hero = () => {
               className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl animate-fade-in"
               style={{ animationDelay: "0.5s" }}
             >
-              Nurturing young minds through world-class education with CAPS, MobyMax, GED, and Cambridge curriculums
+              Cultivating bright futures through exceptional education, featuring CAPS, MobyMax, GED, and Cambridge
+              programs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <button

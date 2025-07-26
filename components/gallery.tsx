@@ -16,10 +16,6 @@ export const Gallery = () => {
       alt: "Modern classroom with individual study stations and colorful chairs",
     },
     {
-      src: "/students-group.jpg",
-      alt: "Happy students at Future Focus Learning Centre",
-    },
-    {
       src: "/campus-sunset.jpg",
       alt: "Beautiful campus grounds at sunset with outdoor recreational areas",
     },
