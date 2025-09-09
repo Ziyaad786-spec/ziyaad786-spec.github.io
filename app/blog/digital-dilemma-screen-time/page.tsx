@@ -4,57 +4,156 @@ import { ArrowLeft, Calendar, User, Clock, Home, Sparkles, Star, Leaf, TreePine,
 export default function DigitalDilemmaPost() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-white via-blue-50 to-purple-50 relative overflow-hidden">
-      {/* Animated Background Elements */}
+      {/* Enhanced Animated Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
+        {/* Digital-themed icons with varied animations */}
         <Sparkles
-          className="absolute top-16 left-8 h-5 w-5 text-blue-300 animate-pulse"
+          className="absolute top-16 left-8 h-6 w-6 text-blue-400 animate-pulse opacity-65"
           style={{ animationDelay: "0s" }}
         />
         <Star
-          className="absolute top-24 right-16 h-4 w-4 text-purple-300 animate-bounce"
+          className="absolute top-24 right-16 h-5 w-5 text-purple-400 animate-bounce opacity-70"
           style={{ animationDelay: "1s" }}
         />
         <Smartphone
-          className="absolute top-1/4 left-1/5 h-6 w-6 text-indigo-300 animate-float"
+          className="absolute top-1/4 left-1/5 h-7 w-7 text-indigo-400 animate-float opacity-60"
           style={{ animationDelay: "2s" }}
         />
         <TreePine
-          className="absolute top-1/3 right-1/4 h-7 w-7 text-emerald-400 animate-pulse"
+          className="absolute top-1/3 right-1/4 h-8 w-8 text-emerald-500 animate-pulse opacity-55"
           style={{ animationDelay: "3s" }}
         />
         <Star
-          className="absolute bottom-1/4 left-12 h-5 w-5 text-cyan-300 animate-bounce"
+          className="absolute bottom-1/4 left-12 h-6 w-6 text-cyan-400 animate-bounce opacity-65"
           style={{ animationDelay: "4s" }}
         />
         <Leaf
-          className="absolute bottom-32 right-12 h-6 w-6 text-teal-300 animate-float"
+          className="absolute bottom-32 right-12 h-7 w-7 text-teal-400 animate-float opacity-60"
           style={{ animationDelay: "5s" }}
         />
         <Sparkles
-          className="absolute top-2/3 left-1/3 h-4 w-4 text-violet-300 animate-pulse"
+          className="absolute top-2/3 left-1/3 h-5 w-5 text-violet-400 animate-pulse opacity-70"
           style={{ animationDelay: "6s" }}
         />
+        <Calendar
+          className="absolute top-12 left-1/3 h-5 w-5 text-blue-300 animate-bounce opacity-55"
+          style={{ animationDelay: "7s" }}
+        />
+        <User
+          className="absolute bottom-1/5 right-1/5 h-6 w-6 text-purple-300 animate-float opacity-60"
+          style={{ animationDelay: "8s" }}
+        />
+        <Clock
+          className="absolute top-1/2 right-8 h-5 w-5 text-indigo-300 animate-pulse opacity-65"
+          style={{ animationDelay: "9s" }}
+        />
+        <Home
+          className="absolute bottom-40 left-1/4 h-6 w-6 text-emerald-300 animate-bounce opacity-55"
+          style={{ animationDelay: "10s" }}
+        />
+        <ArrowLeft
+          className="absolute top-3/4 right-1/3 h-4 w-4 text-cyan-300 animate-float opacity-60"
+          style={{ animationDelay: "11s" }}
+        />
 
-        {/* Floating Circles */}
+        {/* Tech-themed additional elements */}
         <div
-          className="absolute top-12 right-1/5 w-16 h-16 bg-blue-200 rounded-full opacity-20 animate-float"
+          className="absolute top-20 right-1/3 h-3 w-3 bg-blue-400 rounded-full animate-ping opacity-50"
           style={{ animationDelay: "1s" }}
         ></div>
         <div
-          className="absolute top-1/2 left-8 w-20 h-20 bg-purple-200 rounded-full opacity-25 animate-bounce"
-          style={{ animationDelay: "2s" }}
-        ></div>
-        <div
-          className="absolute bottom-1/3 right-16 w-14 h-14 bg-indigo-200 rounded-full opacity-30 animate-pulse"
+          className="absolute bottom-1/3 left-1/6 h-2 w-2 bg-purple-400 rounded-full animate-pulse opacity-60"
           style={{ animationDelay: "3s" }}
         ></div>
         <div
-          className="absolute top-3/4 right-1/3 w-18 h-18 bg-cyan-200 rounded-full opacity-20 animate-float"
+          className="absolute top-1/4 right-1/6 h-4 w-4 bg-indigo-400 rounded-full animate-bounce opacity-45"
+          style={{ animationDelay: "5s" }}
+        ></div>
+        <div
+          className="absolute bottom-1/2 left-8 h-3 w-3 bg-cyan-400 rounded-full animate-ping opacity-55"
+          style={{ animationDelay: "7s" }}
+        ></div>
+
+        {/* Enhanced Floating Circles */}
+        <div
+          className="absolute top-12 right-1/5 w-20 h-20 bg-blue-300 rounded-full opacity-45 animate-float"
+          style={{ animationDelay: "1s" }}
+        ></div>
+        <div
+          className="absolute top-1/2 left-8 w-24 h-24 bg-purple-300 rounded-full opacity-40 animate-bounce"
+          style={{ animationDelay: "2s" }}
+        ></div>
+        <div
+          className="absolute bottom-1/3 right-16 w-18 h-18 bg-indigo-300 rounded-full opacity-50 animate-pulse"
+          style={{ animationDelay: "3s" }}
+        ></div>
+        <div
+          className="absolute top-3/4 right-1/3 w-22 h-22 bg-cyan-300 rounded-full opacity-35 animate-float"
           style={{ animationDelay: "4s" }}
         ></div>
         <div
-          className="absolute bottom-16 left-1/4 w-12 h-12 bg-violet-200 rounded-full opacity-35 animate-bounce"
+          className="absolute bottom-16 left-1/4 w-16 h-16 bg-violet-300 rounded-full opacity-45 animate-bounce"
           style={{ animationDelay: "5s" }}
+        ></div>
+        <div
+          className="absolute top-1/3 left-1/6 w-26 h-26 bg-emerald-300 rounded-full opacity-40 animate-pulse"
+          style={{ animationDelay: "6s" }}
+        ></div>
+
+        {/* Digital-themed geometric shapes */}
+        <div
+          className="absolute top-40 right-12 w-8 h-8 bg-blue-400 transform rotate-45 animate-spin opacity-40"
+          style={{ animationDelay: "2s", animationDuration: "10s" }}
+        ></div>
+        <div
+          className="absolute bottom-1/4 left-1/5 w-6 h-6 bg-purple-400 transform rotate-12 animate-pulse opacity-45"
+          style={{ animationDelay: "4s" }}
+        ></div>
+        <div
+          className="absolute top-1/2 left-1/4 w-7 h-7 bg-indigo-400 transform -rotate-45 animate-bounce opacity-50"
+          style={{ animationDelay: "6s" }}
+        ></div>
+        <div
+          className="absolute bottom-1/5 right-1/4 w-5 h-5 bg-cyan-400 transform rotate-90 animate-float opacity-55"
+          style={{ animationDelay: "8s" }}
+        ></div>
+
+        {/* Screen/device inspired rectangles */}
+        <div
+          className="absolute top-1/4 right-8 w-4 h-6 bg-blue-300 rounded-sm animate-pulse opacity-35"
+          style={{ animationDelay: "3s" }}
+        ></div>
+        <div
+          className="absolute bottom-1/3 left-12 w-6 h-4 bg-purple-300 rounded-sm animate-bounce opacity-40"
+          style={{ animationDelay: "5s" }}
+        ></div>
+        <div
+          className="absolute top-2/3 right-1/5 w-5 h-7 bg-indigo-300 rounded-sm animate-float opacity-45"
+          style={{ animationDelay: "7s" }}
+        ></div>
+
+        {/* Enhanced gradient orbs with digital theme */}
+        <div
+          className="absolute top-1/5 right-1/4 w-36 h-36 bg-gradient-to-br from-blue-200 to-purple-200 rounded-full opacity-25 animate-float blur-sm"
+          style={{ animationDelay: "2s" }}
+        ></div>
+        <div
+          className="absolute bottom-1/4 left-1/5 w-44 h-44 bg-gradient-to-tr from-indigo-200 to-cyan-200 rounded-full opacity-20 animate-pulse blur-sm"
+          style={{ animationDelay: "4s" }}
+        ></div>
+        <div
+          className="absolute top-1/2 right-1/6 w-32 h-32 bg-gradient-to-bl from-purple-200 to-violet-200 rounded-full opacity-30 animate-bounce blur-sm"
+          style={{ animationDelay: "6s", animationDuration: "4s" }}
+        ></div>
+
+        {/* Connecting lines/dots pattern */}
+        <div
+          className="absolute top-1/3 left-1/3 w-1 h-12 bg-blue-300 opacity-30 animate-pulse"
+          style={{ animationDelay: "4s" }}
+        ></div>
+        <div
+          className="absolute bottom-1/2 right-1/3 w-16 h-1 bg-purple-300 opacity-35 animate-float"
+          style={{ animationDelay: "6s" }}
         ></div>
       </div>
 

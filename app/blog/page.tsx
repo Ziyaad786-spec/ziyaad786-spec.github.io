@@ -28,48 +28,111 @@ export default function BlogPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 relative overflow-hidden">
-      {/* Animated Background Elements */}
+      {/* Enhanced Animated Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
+        {/* Icons with varied animations */}
         <Sparkles
-          className="absolute top-20 left-10 h-6 w-6 text-emerald-300 animate-pulse"
+          className="absolute top-20 left-10 h-6 w-6 text-emerald-400 animate-pulse opacity-60"
           style={{ animationDelay: "0s" }}
         />
         <Star
-          className="absolute top-32 right-20 h-4 w-4 text-blue-300 animate-bounce"
+          className="absolute top-32 right-20 h-5 w-5 text-blue-400 animate-bounce opacity-70"
           style={{ animationDelay: "1s" }}
         />
         <Leaf
-          className="absolute top-1/3 left-1/4 h-5 w-5 text-green-300 animate-float"
+          className="absolute top-1/3 left-1/4 h-6 w-6 text-green-400 animate-float opacity-65"
           style={{ animationDelay: "2s" }}
         />
         <Sparkles
-          className="absolute bottom-1/3 right-1/3 h-7 w-7 text-purple-300 animate-pulse"
+          className="absolute bottom-1/3 right-1/3 h-8 w-8 text-purple-400 animate-pulse opacity-55"
           style={{ animationDelay: "3s" }}
         />
         <Star
-          className="absolute bottom-20 left-16 h-5 w-5 text-amber-300 animate-bounce"
+          className="absolute bottom-20 left-16 h-6 w-6 text-amber-400 animate-bounce opacity-70"
           style={{ animationDelay: "4s" }}
         />
         <Leaf
-          className="absolute top-2/3 right-10 h-6 w-6 text-teal-300 animate-float"
+          className="absolute top-2/3 right-10 h-7 w-7 text-teal-400 animate-float opacity-60"
           style={{ animationDelay: "5s" }}
         />
+        <Calendar
+          className="absolute top-16 right-1/3 h-5 w-5 text-indigo-300 animate-pulse opacity-50"
+          style={{ animationDelay: "6s" }}
+        />
+        <User
+          className="absolute bottom-1/4 right-20 h-4 w-4 text-pink-300 animate-bounce opacity-55"
+          style={{ animationDelay: "7s" }}
+        />
+        <ArrowRight
+          className="absolute top-1/2 left-12 h-5 w-5 text-cyan-300 animate-float opacity-60"
+          style={{ animationDelay: "8s" }}
+        />
+        <Home
+          className="absolute bottom-32 right-1/4 h-6 w-6 text-rose-300 animate-pulse opacity-65"
+          style={{ animationDelay: "9s" }}
+        />
 
-        {/* Floating Circles */}
+        {/* Additional scattered elements */}
         <div
-          className="absolute top-10 right-1/4 w-20 h-20 bg-emerald-200 rounded-full opacity-30 animate-float"
-          style={{ animationDelay: "1s" }}
-        ></div>
-        <div
-          className="absolute bottom-32 left-1/3 w-16 h-16 bg-blue-200 rounded-full opacity-40 animate-bounce"
+          className="absolute top-24 left-1/3 h-3 w-3 bg-emerald-400 rounded-full animate-ping opacity-40"
           style={{ animationDelay: "2s" }}
         ></div>
         <div
-          className="absolute top-1/2 right-20 w-12 h-12 bg-purple-200 rounded-full opacity-35 animate-pulse"
+          className="absolute bottom-40 left-1/5 h-2 w-2 bg-blue-400 rounded-full animate-pulse opacity-50"
+          style={{ animationDelay: "4s" }}
+        ></div>
+        <div
+          className="absolute top-3/4 right-1/5 h-4 w-4 bg-purple-400 rounded-full animate-bounce opacity-45"
+          style={{ animationDelay: "6s" }}
+        ></div>
+
+        {/* Enhanced Floating Circles */}
+        <div
+          className="absolute top-10 right-1/4 w-24 h-24 bg-emerald-300 rounded-full opacity-40 animate-float"
+          style={{ animationDelay: "1s" }}
+        ></div>
+        <div
+          className="absolute bottom-32 left-1/3 w-20 h-20 bg-blue-300 rounded-full opacity-50 animate-bounce"
+          style={{ animationDelay: "2s" }}
+        ></div>
+        <div
+          className="absolute top-1/2 right-20 w-16 h-16 bg-purple-300 rounded-full opacity-45 animate-pulse"
           style={{ animationDelay: "3s" }}
         ></div>
         <div
-          className="absolute bottom-1/4 left-20 w-24 h-24 bg-green-200 rounded-full opacity-25 animate-float"
+          className="absolute bottom-1/4 left-20 w-28 h-28 bg-green-300 rounded-full opacity-35 animate-float"
+          style={{ animationDelay: "4s" }}
+        ></div>
+        <div
+          className="absolute top-1/4 left-1/2 w-18 h-18 bg-amber-300 rounded-full opacity-40 animate-bounce"
+          style={{ animationDelay: "5s" }}
+        ></div>
+        <div
+          className="absolute bottom-16 right-1/3 w-22 h-22 bg-teal-300 rounded-full opacity-45 animate-pulse"
+          style={{ animationDelay: "6s" }}
+        ></div>
+
+        {/* Geometric shapes */}
+        <div
+          className="absolute top-40 right-12 w-6 h-6 bg-indigo-300 transform rotate-45 animate-spin opacity-35"
+          style={{ animationDelay: "3s", animationDuration: "8s" }}
+        ></div>
+        <div
+          className="absolute bottom-1/3 left-1/4 w-8 h-8 bg-pink-300 transform rotate-12 animate-pulse opacity-40"
+          style={{ animationDelay: "5s" }}
+        ></div>
+        <div
+          className="absolute top-2/3 left-1/5 w-5 h-5 bg-cyan-300 transform -rotate-45 animate-bounce opacity-50"
+          style={{ animationDelay: "7s" }}
+        ></div>
+
+        {/* Gradient orbs */}
+        <div
+          className="absolute top-1/3 right-1/5 w-32 h-32 bg-gradient-to-br from-emerald-200 to-blue-200 rounded-full opacity-25 animate-float blur-sm"
+          style={{ animationDelay: "2s" }}
+        ></div>
+        <div
+          className="absolute bottom-1/5 left-1/3 w-40 h-40 bg-gradient-to-tr from-purple-200 to-pink-200 rounded-full opacity-20 animate-pulse blur-sm"
           style={{ animationDelay: "4s" }}
         ></div>
       </div>
