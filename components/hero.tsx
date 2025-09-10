@@ -63,6 +63,14 @@ export const Hero = () => {
               >
                 Enroll Today
               </button>
+              <a
+                href="/downloads/ged-brochure.pdf"
+                download="FFLC-GED-Brochure.pdf"
+                className="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all duration-300 hover:scale-110 animate-slide-in-right transform hover:-rotate-1 shadow-lg hover:shadow-xl"
+                style={{ animationDelay: "0.2s" }}
+              >
+                Download GED Brochure
+              </a>
             </div>
           </div>
 

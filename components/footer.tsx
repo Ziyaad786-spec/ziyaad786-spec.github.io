@@ -44,6 +44,15 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
+                <a
+                  href="/downloads/ged-brochure.pdf"
+                  download="FFLC-GED-Brochure.pdf"
+                  className="text-gray-300 hover:text-blue-400 transition-colors"
+                >
+                  GED Brochure
+                </a>
+              </li>
+              <li>
                 <a href="#contact" className="text-gray-300 hover:text-blue-400 transition-colors">
                   Contact
                 </a>

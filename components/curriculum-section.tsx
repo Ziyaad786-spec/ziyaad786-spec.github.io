@@ -99,7 +99,7 @@ export const CurriculumSection = () => {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">{curriculum.name}</h3>
               <p className="text-gray-700 mb-6">{curriculum.description}</p>
-              <ul className="space-y-3">
+              <ul className="space-y-3 mb-6">
                 {curriculum.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center group">
                     <CheckCircle className="h-5 w-5 text-emerald-500 mr-3 group-hover:scale-125 transition-transform duration-200" />
@@ -109,6 +109,25 @@ export const CurriculumSection = () => {
                   </li>
                 ))}
               </ul>
+              {curriculum.name === "GED" && (
+                <div className="mt-4 pt-4 border-t border-gray-200">
+                  <a
+                    href="/downloads/ged-brochure.pdf"
+                    download="FFLC-GED-Brochure.pdf"
+                    className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium text-sm hover:scale-105 transition-all duration-200"
+                  >
+                    <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                      />
+                    </svg>
+                    Download GED Brochure
+                  </a>
+                </div>
+              )}
             </div>
           ))}
         </div>

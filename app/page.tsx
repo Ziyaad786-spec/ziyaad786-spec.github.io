@@ -11,6 +11,7 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { WhatSetsUsApart } from "@/components/what-sets-us-apart"
 import { StackedCarousel } from "@/components/stacked-carousel" // Import the new component
+import { DownloadsSection } from "@/components/downloads-section" // Import the new DownloadsSection
 
 export default function FutureFocusWebsite() {
   return (
@@ -27,6 +28,7 @@ export default function FutureFocusWebsite() {
         <GradeLevels />
         <Gallery />
         <ExtracurricularSection />
+        <DownloadsSection /> {/* Added DownloadsSection here */}
         <StackedCarousel /> {/* Use the new StackedCarousel here */}
         <ContactSection />
       </main>
