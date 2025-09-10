@@ -7,10 +7,10 @@ export const DownloadsSection = () => {
       description:
         "Your pathway to a limitless future. Learn about GED benefits, subjects, and how it compares to high school.",
       icon: FileText,
-      file: "/downloads/ged-brochure.pdf",
-      filename: "FFLC-GED-Brochure.pdf",
+      file: "/ged-brochure",
+      filename: "View Online",
       category: "Program Information",
-      size: "PDF",
+      size: "Online",
     },
   ]
 
@@ -46,11 +46,10 @@ export const DownloadsSection = () => {
                 <span className="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded">{download.size}</span>
                 <a
                   href={download.file}
-                  download={download.filename}
                   className="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-all duration-200 hover:scale-105"
                 >
                   <Download className="h-4 w-4" />
-                  Download
+                  View Online
                 </a>
               </div>
             </div>
