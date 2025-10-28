@@ -1,12 +1,9 @@
 "use client"
 
 import { BookOpen, Users, Award, Sparkles, Star, Leaf, TreePine, Flower2 } from "lucide-react"
+import Link from "next/link"
 
 export const Hero = () => {
-  const handleEnrollClick = () => {
-    window.location.href = "mailto:info@futurefocuslearningcentre.co.za?subject=Enrollment Inquiry"
-  }
-
   return (
     <section
       id="home"
@@ -57,12 +54,12 @@ export const Hero = () => {
               programs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <button
-                onClick={handleEnrollClick}
-                className="bg-emerald-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-emerald-700 transition-all duration-300 hover:scale-110 animate-slide-in-right transform hover:rotate-1 shadow-lg hover:shadow-xl"
+              <Link
+                href="/enrol"
+                className="bg-emerald-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-emerald-700 transition-all duration-300 hover:scale-110 animate-slide-in-right transform hover:rotate-1 shadow-lg hover:shadow-xl text-center"
               >
                 Enroll Today
-              </button>
+              </Link>
               <a
                 href="/ged-brochure"
                 className="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all duration-300 hover:scale-110 animate-slide-in-right transform hover:-rotate-1 shadow-lg hover:shadow-xl text-center"
