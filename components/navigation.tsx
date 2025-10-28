@@ -34,6 +34,12 @@ export const Navigation = () => {
                 {item.name}
               </a>
             ))}
+            <a
+              href="/enrol"
+              className="bg-emerald-600 text-white px-6 py-2 rounded-lg text-sm font-semibold hover:bg-emerald-700 transition-all duration-300 hover:scale-105 shadow-md"
+            >
+              Enrol Now
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -58,6 +64,13 @@ export const Navigation = () => {
                   {item.name}
                 </a>
               ))}
+              <a
+                href="/enrol"
+                className="bg-emerald-600 text-white block px-3 py-2 rounded-lg text-base font-semibold hover:bg-emerald-700 transition-colors text-center"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Enrol Now
+              </a>
             </div>
           </div>
         )}
