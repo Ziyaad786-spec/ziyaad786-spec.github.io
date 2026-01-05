@@ -1,123 +1,94 @@
-"use client"
+import { Button } from "@/components/ui/button"
+import { ArrowRight } from "lucide-react"
 
-import { BookOpen, Users, Award, Sparkles, Star, Leaf, TreePine, Flower2 } from "lucide-react"
-import Link from "next/link"
-
-export const Hero = () => {
+export function Hero() {
   return (
-    <section
-      id="home"
-      className="pt-16 bg-gradient-to-br from-green-50 via-emerald-50 to-amber-50 min-h-screen flex items-center relative overflow-hidden"
-    >
-      {/* Nature-themed Floating Graphics */}
-      <div className="absolute inset-0 pointer-events-none">
-        <Leaf
-          className="absolute top-20 left-10 h-8 w-8 text-green-400 animate-float"
-          style={{ animationDelay: "0.5s" }}
+    <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-accent/10 to-secondary/5 animate-gradient" />
+        <img
+          src="/modern-classroom-with-students-studying.jpg"
+          alt="Learning environment"
+          className="w-full h-full object-cover opacity-10"
         />
-        <TreePine
-          className="absolute top-32 right-20 h-10 w-10 text-emerald-400 animate-bounce"
-          style={{ animationDelay: "1s" }}
-        />
-        <Flower2
-          className="absolute bottom-40 left-16 h-6 w-6 text-amber-400 animate-pulse"
-          style={{ animationDelay: "1.5s" }}
-        />
-        <Leaf
-          className="absolute bottom-60 right-32 h-8 w-8 text-green-300 animate-float"
-          style={{ animationDelay: "2s" }}
-        />
-        <Star
-          className="absolute top-1/2 left-1/4 h-4 w-4 text-yellow-400 animate-pulse"
-          style={{ animationDelay: "2.5s" }}
-        />
-        <Sparkles
-          className="absolute top-1/3 right-1/3 h-6 w-6 text-emerald-300 animate-bounce"
-          style={{ animationDelay: "3s" }}
-        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/80 to-background" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="animate-fade-in">
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 animate-slide-in-right">
-              Welcome to
-              <span className="text-emerald-600 block animate-scale-in" style={{ animationDelay: "0.3s" }}>
-                Future Focus Learning Centre
-              </span>
-            </h1>
-            <p
-              className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl animate-fade-in"
-              style={{ animationDelay: "0.5s" }}
-            >
-              Cultivating bright futures through exceptional education, featuring CAPS, MobyMax, GED, and Cambridge
-              programs.
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-4xl mx-auto text-center">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20 mb-8 animate-fade-in-up backdrop-blur-sm">
+            <span className="text-sm font-medium text-accent-foreground">Excellence Since 2013</span>
+          </div>
+
+          {/* Main Heading */}
+          <h1
+            className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 text-balance animate-fade-in-up"
+            style={{ animationDelay: "0.1s" }}
+          >
+            Empowering Learning,{" "}
+            <span className="bg-gradient-to-r from-accent via-accent to-primary bg-clip-text text-transparent">
+              Shaping Futures
+            </span>
+          </h1>
+
+          {/* Subheading */}
+          <p
+            className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto text-pretty leading-relaxed animate-fade-in-up"
+            style={{ animationDelay: "0.2s" }}
+          >
+            Personalized education that adapts to every student's unique learning journey. From foundation building to
+            advanced skills, we nurture excellence at every step.
+          </p>
+
+          <div className="mb-10 animate-fade-in-up" style={{ animationDelay: "0.25s" }}>
+            <p className="text-base md:text-lg font-medium italic bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">
+              "To become the institution of choice in respect of skills training in South Africa"
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <Link
-                href="/enrol"
-                className="bg-emerald-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-emerald-700 transition-all duration-300 hover:scale-110 animate-slide-in-right transform hover:rotate-1 shadow-lg hover:shadow-xl text-center"
-              >
-                Enroll Today
-              </Link>
-              <a
-                href="/ged-brochure"
-                className="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all duration-300 hover:scale-110 animate-slide-in-right transform hover:-rotate-1 shadow-lg hover:shadow-xl text-center"
-                style={{ animationDelay: "0.2s" }}
-              >
-                View GED Brochure
-              </a>
-            </div>
           </div>
 
-          <div className="relative animate-scale-in" style={{ animationDelay: "0.3s" }}>
-            <div className="rounded-lg overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 transform hover:rotate-1">
-              <img
-                src="/school-entrance.jpg"
-                alt="Future Focus Learning Centre building"
-                className="w-full h-auto object-cover transition-transform duration-500 hover:scale-110"
-              />
-            </div>
-            {/* Nature-themed decorative elements around the image */}
-            <div className="absolute -top-4 -left-4 w-20 h-20 bg-green-200 rounded-full opacity-60 animate-pulse"></div>
-            <div
-              className="absolute -bottom-6 -right-6 w-16 h-16 bg-amber-200 rounded-full opacity-60 animate-bounce"
-              style={{ animationDelay: "1s" }}
-            ></div>
-            <div
-              className="absolute top-1/2 -left-8 w-12 h-12 bg-emerald-300 rounded-full opacity-40 animate-float"
-              style={{ animationDelay: "1.5s" }}
-            ></div>
+          {/* CTA Buttons */}
+          <div
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up"
+            style={{ animationDelay: "0.3s" }}
+          >
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-primary to-secondary text-primary-foreground hover:shadow-lg hover:scale-105 transition-all duration-300 group"
+            >
+              Book a Consultation
+              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="hover:bg-accent/10 hover:border-accent/30 transition-all duration-300 bg-transparent"
+            >
+              View Programs
+            </Button>
           </div>
-        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mt-16">
-          <div
-            className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-110 animate-fade-in transform hover:rotate-1 border border-green-100"
-            style={{ animationDelay: "0.4s" }}
-          >
-            <BookOpen className="h-12 w-12 text-emerald-600 mx-auto mb-4 animate-bounce" />
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">4 Curriculums</h3>
-            <p className="text-gray-600">CAPS, MobyMax, GED & Cambridge</p>
-          </div>
-          <div
-            className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-110 animate-fade-in transform hover:-rotate-1 border border-green-100"
-            style={{ animationDelay: "0.6s" }}
-          >
-            <Users className="h-12 w-12 text-amber-600 mx-auto mb-4 animate-pulse" />
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">Grade R-12</h3>
-            <p className="text-gray-600">Complete educational journey</p>
-          </div>
-          <div
-            className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-110 animate-fade-in transform hover:rotate-1 border border-green-100"
-            style={{ animationDelay: "0.8s" }}
-          >
-            <Award
-              className="h-12 w-12 text-green-600 mx-auto mb-4 animate-bounce"
-              style={{ animationDelay: "0.5s" }}
-            />
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">Excellence</h3>
-            <p className="text-gray-600">Quality education guaranteed</p>
+          {/* Stats */}
+          <div className="grid grid-cols-3 gap-8 mt-20 max-w-2xl mx-auto">
+            <div className="animate-scale-in" style={{ animationDelay: "0.4s" }}>
+              <div className="text-3xl md:text-4xl font-bold bg-gradient-to-br from-primary to-accent bg-clip-text text-transparent mb-2">
+                15+
+              </div>
+              <div className="text-sm text-muted-foreground">Years Experience</div>
+            </div>
+            <div className="animate-scale-in" style={{ animationDelay: "0.5s" }}>
+              <div className="text-3xl md:text-4xl font-bold bg-gradient-to-br from-primary to-accent bg-clip-text text-transparent mb-2">
+                2,500+
+              </div>
+              <div className="text-sm text-muted-foreground">Students Taught</div>
+            </div>
+            <div className="animate-scale-in" style={{ animationDelay: "0.6s" }}>
+              <div className="text-3xl md:text-4xl font-bold bg-gradient-to-br from-primary to-accent bg-clip-text text-transparent mb-2">
+                98%
+              </div>
+              <div className="text-sm text-muted-foreground">Success Rate</div>
+            </div>
           </div>
         </div>
       </div>
