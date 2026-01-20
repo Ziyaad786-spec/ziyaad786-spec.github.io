@@ -1,21 +1,40 @@
-import { Header } from "@/components/header"
-import { Hero } from "@/components/hero"
-import { Services } from "@/components/services"
-import { About } from "@/components/about"
-import { Approach } from "@/components/approach"
-import { Contact } from "@/components/contact"
-import { Footer } from "@/components/footer"
+"use client"
 
-export default function Home() {
+import { AboutSection } from "@/components/about-section"
+import { ContactSection } from "@/components/contact-section"
+import { CurriculumSection } from "@/components/curriculum-section"
+import { ExtracurricularSection } from "@/components/extracurricular-section"
+import { Gallery } from "@/components/gallery"
+import { GradeLevels } from "@/components/grade-levels"
+import { Hero } from "@/components/hero"
+import { Navigation } from "@/components/navigation"
+import { Footer } from "@/components/footer"
+import { WhatSetsUsApart } from "@/components/what-sets-us-apart"
+import { StackedCarousel } from "@/components/stacked-carousel" // Import the new component
+import { DownloadsSection } from "@/components/downloads-section" // Import the new DownloadsSection
+
+export default function FutureFocusWebsite() {
   return (
-    <main className="min-h-screen">
-      <Header />
-      <Hero />
-      <Services />
-      <About />
-      <Approach />
-      <Contact />
+    <div className="min-h-screen bg-white">
+      {/* Navigation */}
+      <Navigation />
+
+      {/* Main Content */}
+      <main className="min-h-screen">
+        <Hero />
+        <AboutSection />
+        <WhatSetsUsApart />
+        <CurriculumSection />
+        <GradeLevels />
+        <Gallery />
+        <ExtracurricularSection />
+        <DownloadsSection /> {/* Added DownloadsSection here */}
+        <StackedCarousel /> {/* Use the new StackedCarousel here */}
+        <ContactSection />
+      </main>
+
+      {/* Footer */}
       <Footer />
-    </main>
+    </div>
   )
 }

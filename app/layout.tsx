@@ -1,42 +1,14 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter, Space_Grotesk } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
-import { LoadingScreen } from "@/components/loading-screen"
+import { Inter } from "next/font/google"
 import "./globals.css"
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-})
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-space-grotesk",
-})
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "LSF Cape Town | Empowering Learning, Shaping Futures",
-  description:
-    "Premier learning centre in Cape Town offering personalized tutoring, academic support, and skills development for students of all ages.",
-  generator: "v0.app",
-  icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
-  },
+  title: "FFLC", // Changed from "v0 App"
+  description: "Future Focus Learning Centre - Empowering Learners for a World-Class Education",
+    generator: 'v0.app'
 }
 
 export default function RootLayout({
@@ -45,12 +17,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
-      <body className={`font-sans antialiased`}>
-        <LoadingScreen />
-        {children}
-        <Analytics />
-      </body>
+    <html lang="en">
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }
